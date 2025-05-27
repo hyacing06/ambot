@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Tracker with Firebase</title>
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f4f4f4; }
+    .controls { margin: 10px 0; }
+    .admin-panel { margin-top: 20px; }
+    .sheet-tabs { margin-top: 20px; }
+    .sheet-tab { display: inline-block; margin-right: 10px; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; border-radius: 4px; }
+    .sheet-tab.active { background-color: #007bff; color: white; }
+    #uploadMessage { margin-top: 5px; color: green; font-weight: bold; }
+    .sheet-actions { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Excel Tracker with Firebase</h1>
+
+  <!-- existing HTML code remains unchanged -->
+
+  <script type="module">
+    // existing JavaScript code
+
+    // Register service worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(error => console.error('Service Worker Registration Failed:', error));
+    }
+  </script>
+</body>
+</html>
